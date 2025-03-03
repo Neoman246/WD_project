@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech CEOs - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span>Tech CEOs</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/register.html" class="active">Register</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Leading Tech Visionaries</h1>
+            <p>Discover the stories of influential technology leaders</p>
+
+        </section>
+
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+        <br>
+
+        <section class="ceo-grid">
+            <div class="ceo-card" data-ceo="elon-musk">
+                <img src="./images/Elon_Musk.jpg" alt="Elon Musk">
+                <h3>Elon Musk</h3>
+                <p>Tesla, SpaceX, X</p>
+            </div>
+            <div class="ceo-card" data-ceo="mark-zuckerberg">
+                <img src="./images/Mark_Zuckerberg.jpg" alt="Mark Zuckerberg">
+                <h3>Mark Zuckerberg</h3>
+                <p>Meta</p>
+            </div>
+            <div class="ceo-card" data-ceo="sundar-pichai">
+                <img src="./images/Sundar_Pichai.jpg" alt="Sundar Pichai">
+                <h3>Sundar Pichai</h3>
+                <p>Google, Alphabet</p>
+            </div>
+            <div class="ceo-card" data-ceo="satya-nadella">
+                <img src="./images/satya_nadella.jpeg" alt="Satya Nadella">
+                <h3>Satya Nadella</h3>
+                <p>Microsoft</p>
+            </div>
+            <div class="ceo-card" data-ceo="tim-cook">
+                <img src="./images/tim_cook.jpeg" alt="Tim Cook">
+                <h3>Tim Cook</h3>
+                <p>Apple</p>
+            </div>
+            <div class="ceo-card" data-ceo="jensen-huang">
+                <img src="./images/Jensen-Huang.jpg" alt="Jensen Huang">
+                <h3>Jensen Huang</h3>
+                <p>NVIDIA</p>
+            </div>
+            <div class="ceo-card" data-ceo="andy-jassy">
+                <img src="./images/andy-jassey.jpg" alt="Andy Jassy">
+                <h3>Andy Jassy</h3>
+                <p>Amazon</p>
+            </div>
+            <div class="ceo-card" data-ceo="lisa-su">
+                <img src="./images/Lisa_Su.jpeg" alt="Lisa Su">
+                <h3>Lisa Su</h3>
+                <p>AMD</p>
+            </div>
+            <div class="ceo-card" data-ceo="pat-gelsinger">
+                <img src="./images/pat-gelsinger.jpg" alt="Pat Gelsinger">
+                <h3>Pat Gelsinger</h3>
+                <p>Intel</p>
+            </div>
+            <div class="ceo-card" data-ceo="shantanu-narayen">
+                <img src="./images/Shantanu_Narayen.jpg" alt="Shantanu Narayen">
+                <h3>Shantanu Narayen</h3>
+                <p>Adobe</p>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Latest Updates</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <h3>AI Innovations</h3>
+                    <p>Latest developments in artificial intelligence from top tech companies.</p>
+                </article>
+                <article class="news-card">
+                    <h3>Sustainable Tech</h3>
+                    <p>How tech leaders are addressing climate change.</p>
+                </article>
+                <article class="news-card">
+                    <h3>Future of Work</h3>
+                    <p>Tech CEOs' vision for the future workplace.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="ceoModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <img src="" alt="" id="modalImage">
+                <div class="modal-header-text">
+                    <h2 id="modalName"></h2>
+                    <p id="modalRole"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="info-section">
+                    <h3>Background</h3>
+                    <p id="modalBackground"></p>
+                </div>
+                <div class="info-section">
+                    <h3>Key Achievements</h3>
+                    <div id="modalAchievements"></div>
+                </div>
+                <div class="info-section">
+                    <h3>Companies</h3>
+                    <ul id="modalCompanies"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tech CEOs. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
